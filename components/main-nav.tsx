@@ -2,7 +2,6 @@ import * as React from "react"
 import Link from "next/link"
 
 import { NavItem } from "@/types/nav"
-import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
 
@@ -16,7 +15,7 @@ export function MainNav({ items }: MainNavProps) {
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <Icons.logo className="h-6 w-6" />
         <span className="hidden font-bold sm:inline-block">
-          {siteConfig.name}
+          PaperBrain
         </span>
       </Link>
       {items?.length ? (
